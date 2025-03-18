@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="max-w-3xl m-auto p-6 shadow-md rounded-md mt-5">
-      <h1 className="text-2xl font-bold text-center mb-4">Math Worksheet</h1>
+      <h1 className="text-2xl font-bold text-center mb-4">Rounding Off to the Nearest 10</h1>
       <div className="flex flex-col md:flex-row justify-between gap-2">
         <div className="w-full">
           <label className="block mb-2 font-semibold">Name:</label>
@@ -71,6 +71,7 @@ function App() {
         </div>
       </div>
       {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
+      <p className="text-lg mb-2 text-center">Circle the correct answer</p>
       <div className="flex justify-between flex-wrap">
         {questions.map((q, index) => (
           <div key={index} className="mb-4 w-full md:w-1/2">
@@ -80,7 +81,7 @@ function App() {
                 <button
                   key={option}
                   onClick={() => handleSelect(index, option)}
-                  className={`px-4 py-2 rounded border ${answers[index] === option ? "bg-blue-500 text-white" : "bg-white"
+                  className={`px-4 py-2 ${answers[index] === option ? "bg-blue-500 text-white rounded-full border" : "bg-white"
                     }`}
                 >
                   {option}
@@ -104,6 +105,9 @@ function App() {
           Submit
         </button>
       </div>
+    <footer className="mt-8 text-center text-gray-500 text-sm">
+      copyright: www.mathinenglish.com
+    </footer>
     </div>
   )
 }
