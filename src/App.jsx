@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="max-w-3xl m-auto p-6 shadow-md rounded-md mt-5">
-      <h1 className="text-2xl font-bold text-center mb-4">Rounding Off to the Nearest 10</h1>
+      <h1 className="text-2xl font-bold text-center mb-4">Rounding Off to the Nearest 10. Yeah?</h1>
       <div className="flex flex-col md:flex-row justify-between gap-2">
         <div className="w-full">
           <label className="block mb-2 font-semibold">Name:</label>
